@@ -26,9 +26,7 @@
 						<table border="0" cellspacing="0" cellpadding="10">							
 							<tr>
 								<td class="td-type02">
-									하이 헬로 봉쥬르 쓰바씨바<br>
-									아푸지마 도토 도토 잠보<br>
-									웹 서버 백엔드 개발자가 필요하신 분은 <a href="mailto:tiger@gmail.com">tiger@gmail.com</a>으로 연락하세요
+									연락주셈<a href="mailto:tiger@gmail.com">tiger@gmail.com</a>으로 연락하세요
 								</td>
 							</tr>				
 						</table>

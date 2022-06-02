@@ -15,10 +15,10 @@
 	<center>
 	<table class="t-type01" width="75%" border="0" cellspacing="0" cellpadding="20">
 		<tr>
-			<td><span class="title01">DEVELOPER GyeongMin'S PROFILE</span></td>
+			<td><span class="title01"><b>${mname }</b>님 안녕하세요.<br></span></td>
 		</tr>
 		<tr>
-			<td><span class="title02">The wisest men follow their own direction.</span></td>
+			<td><span class="title02">ㅁㄴㅇㄻㄴㅇㄹ</span></td>
 		</tr>
 		<tr>
 			<table width="70%" border="0" cellspacing="0" cellpadding="10">

@@ -16,10 +16,10 @@
 	<center>
 	<table class="t-type01" width="75%" border="0" cellspacing="0" cellpadding="20">
 		<tr>
-			<td><span class="title01">ICI카페 소개</span></td>
+			<td><span class="title01">제목</span></td>
 		</tr>
 		<tr>
-			<td><span class="title02">ICI STORY OF BEST COFFEE 최고의 커피를 전해 드리고 싶은 더카페 이야기</span></td>			
+			<td><span class="title02">냉무</span></td>			
 		</tr>
 		<tr>
 			<table width="50%" border="0" cellspacing="0" cellpadding="10">

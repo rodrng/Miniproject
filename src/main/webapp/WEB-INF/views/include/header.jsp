@@ -12,7 +12,6 @@
 		<tr height="50">
 			<td width="70%">&nbsp;</td>
 			<td width="6%"><a href="${pageContext.request.contextPath}/">홈&nbsp;</a></td>
-			<td width="6%"><a href="profile">카페소개&nbsp;</td>
 			<td width="6%">
 				<% String sessionId = (String) session.getAttribute("id"); 
 					if(sessionId == null){
@@ -22,7 +21,7 @@
 					}else{	
 				%>
 				
-					<a href="logout">로그아웃&nbsp;</a>	
+					<a href="logout"><b>${mname }</b>로그아웃&nbsp;</a>	
 				<%
 					}
 				%>
@@ -44,12 +43,11 @@
 			</td>
 			-->
 			
+			<td width="6%"><a href="order">주문하기&nbsp;</td>
 			<td width="6%"><a href="question">질문&nbsp;</a></td>
 			<td width="6%"><a href="contact">연락처&nbsp;</a></td>		
 		</tr>
-		<tr>
-			<td height="50" colspan="7" bgcolor="#FFFFFF">&nbsp;</td>
-		</tr>
+		
 	</table>
 </body>
 </html>

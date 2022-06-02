@@ -24,6 +24,7 @@ public class WebController {
 
 	@Autowired
 	private SqlSession sqlSession;	
+
 	
 	@RequestMapping(value = "/")
 	public String home() {		
@@ -49,10 +50,19 @@ public class WebController {
 		return "join";
 	}
 	
-	@RequestMapping(value = "/profile")
-	public String profile() {		
+	@RequestMapping(value = "/order")
+	public String order() {		
 		
-		return "profile";
+		return "order";
+	}
+	
+	@RequestMapping(value = "/payment")
+	public String payment(HttpServletRequest request) {
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		dao.paymentDao(request.getParameter("qmenu"), request.getParameter("qamount"), request.getParameter("qprice"), request.getParameter("qnum"));
+		return "redirect:index";
+		
 	}
 	
 	@RequestMapping(value = "/question")

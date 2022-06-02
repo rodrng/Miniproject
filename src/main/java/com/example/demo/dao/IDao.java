@@ -21,5 +21,8 @@ public interface IDao {
 	public int checkPwDao(String mid, String mpw); // 아이디와 비밀번호 일치여부 체크
 	public void memberInfoModifyOkDao(String mpw, String mname, String memail, String mid); // 회원정보 수정
 	
+	// qmenu
+	public void paymentDao(String qmenu, String qamount, String qprice, String qnum);
+	
 	
 }

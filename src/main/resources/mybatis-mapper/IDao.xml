@@ -47,5 +47,10 @@
 	<update id="memberInfoModifyOkDao">
 		UPDATE pmember SET mpw = #{param1}, mname = #{param2}, memail = #{param3} WHERE mid = #{param4}
 	</update>
+	
+	<!-- menu SQL -->	
+	<insert id="paymentDao" >
+		INSERT INTO q_menu (qmenu, qamount, qprice, qnum) VALUES (q_menu_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4})
+	</insert>
 
 </mapper>

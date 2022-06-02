@@ -26,12 +26,10 @@
 						<table border="0" cellspacing="0" cellpadding="10">							
 							<form action="loginOk" method="post">
 								<tr>
-									<td class="td-type01">MEMBER ID</td>
-									<td><input id="input01" type="text" name="id"></td>
+									<td><input id="input01" type="text" name="id" placeholder="아이디" onfocus="this.placeholder=''" onblur="this.placeholder='아이디'"></td>
 								</tr>
 								<tr>
-									<td class="td-type01">PASSWORD</td>
-									<td><input id="input01" type="password" name="pw"></td>
+									<td><input id="input01" type="password" name="pw" placeholder="비밀번호" onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호'"></td>
 								</tr>
 								<tr>
 									<td colspan="2">
