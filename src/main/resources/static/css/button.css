@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+.submit {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 30px 570px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 300px 5px;
+  cursor: pointer;
+}
+
+table.t01 {
+	font-size: 12px;
+	font-family: Arial;
+	color: #000000;
+	font-weight: bold;
+	background-color: #ffffff;	
+}
+
+sub{
+	size:50px;
+	
+}
