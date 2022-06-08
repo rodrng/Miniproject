@@ -37,7 +37,7 @@
 							<tr>
 								<td class="td-type04">${dto.qnum }</td>
 								<td class="td-type04">${dto.qid }</td>
-								<td class="td-type05" width="500"><a href="qview?qnum=${dto.qnum }">
+								<td class="td-type04" width="500"><a href="qview?qnum=${dto.qnum }">
 								<c:choose>
 									<c:when test="${fn:length(dto.qcontent) > 25 }">
 										<c:out value="${fn:substring(dto.qcontent,0,24)}" />....

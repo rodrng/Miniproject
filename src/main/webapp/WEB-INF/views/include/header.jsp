@@ -21,7 +21,7 @@
 					}else{	
 				%>
 				
-					<a href="logout"><b>${mname }</b>로그아웃&nbsp;</a>	
+					<a href="logout">로그아웃&nbsp;</a>	
 				<%
 					}
 				%>

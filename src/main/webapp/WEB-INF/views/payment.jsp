@@ -165,7 +165,7 @@
                    <tr style="text-align: center; font-size:30px; height:50px; border=10px; border-top-color="blue">
                               <td>수량 및 가격</td>
                                  <td>??</td>
-                                 <td>??</td>
+                                 <td>${orderallprice}</td>
                      </tr>
                      
                      

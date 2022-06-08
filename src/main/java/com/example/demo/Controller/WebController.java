@@ -171,66 +171,91 @@ public class WebController {
 
 
 	      // 아래 코드는 수량/가격 추가할수있는거임 ㅇㅇ
-//	      int order1priceint = 0;
-//	      int order2priceint = 0;
-//	      int order3priceint = 0;
-//	      int order4priceint = 0;
-//	      int order5priceint = 0;
-//	      int order6priceint = 0;
-//	      
-//	      int order1cupint = 0;
-//	      int order2cupint = 0;
-//	      int order3cupint = 0;
-//	      int order4cupint = 0;
-//	      int order5cupint = 0;
-//	      int order6cupint = 0;
-//
-//	      
-//	      
-//	      if(order1price.equals(" "))  {
-//	         order1priceint = 0;  
-//	      } else {
-//	         order1priceint = Integer.parseInt(order1price);
-//	        
-//	      }
-//	      if(order2price.equals(" "))  {
-//	         order2priceint = 0;
-//	      } else {
-//	         order2priceint = Integer.parseInt(order2price);
-//	      
-//	      }
-//	      if(order3price.equals(" "))  {
-//	         order3priceint = 0;
-//	      } else {
-//	         order3priceint = Integer.parseInt(order3price);
-//	        
-//	      }
-//	      if(order4price.equals(" "))  {
-//	         order4priceint = 0;
-//	      } else {
-//	         order4priceint = Integer.parseInt(order4price);
-//	    
-//	      }
-//	      if(order5price.equals(" "))  {
-//	         order5priceint = 0;
-//	      } else {
-//	         order5priceint = Integer.parseInt(order5price);
-//	     
-//	      }
-//	      if(order6price.equals(" "))  {
-//	         order6priceint = 0;
-//	      } else {
-//	         order6priceint = Integer.parseInt(order6price);
-//	      
-//	      }
-//
-//	      
-//	      
-//	      int orderallprice = order1priceint + order2priceint + order3priceint
-//	              + order4priceint + order5priceint + order6priceint;
-//
-//	      
-//	      model.addAttribute("orderallprice", orderallprice);
+	      int order1numm = 0;
+	      int order2numm = 0;
+	      int order3numm = 0;
+	      int order4numm = 0;
+	      int order5numm = 0;
+	      int order6numm = 0;
+	      int order7numm = 0;
+	      int order8numm = 0;
+	      int order9numm = 0;
+	      
+	      int order1pricee = 0;
+	      int order2pricee = 0;
+	      int order3pricee = 0;
+	      int order4pricee = 0;
+	      int order5pricee = 0;
+	      int order6pricee = 0;
+	      int order7pricee = 0;
+	      int order8pricee = 0;
+	      int order9pricee = 0;
+
+	      
+	      
+	      if(order1price.equals(" "))  {
+	    	  order1pricee = 0;  
+	      } else {
+	    	  order1pricee = Integer.parseInt(order1price);
+	        
+	      }
+	      if(order2price.equals(" "))  {
+	    	  order2pricee = 0;
+	      } else {
+	    	  order2pricee = Integer.parseInt(order2price);
+	      
+	      }
+	      if(order3price.equals(" "))  {
+	    	  order3pricee = 0;
+	      } else {
+	    	  order3pricee = Integer.parseInt(order3price);
+	        
+	      }
+	      if(order4price.equals(" "))  {
+	    	  order4pricee = 0;
+	      } else {
+	    	  order4pricee = Integer.parseInt(order4price);
+	    
+	      }
+	      if(order5price.equals(" "))  {
+	    	  order5pricee = 0;
+	      } else {
+	    	  order5pricee = Integer.parseInt(order5price);
+	     
+	      }
+	      if(order6price.equals(" "))  {
+	    	  order6pricee = 0;
+	      } else {
+	    	  order6pricee = Integer.parseInt(order6price);
+	      
+	      }
+	      if(order7price.equals(" "))  {
+	    	  order7pricee = 0;
+	      } else {
+	    	  order7pricee = Integer.parseInt(order6price);
+	      
+	      }
+	      if(order8price.equals(" "))  {
+	    	  order8pricee = 0;
+	      } else {
+	    	  order8pricee = Integer.parseInt(order6price);
+	      
+	      }
+	      if(order9price.equals(" "))  {
+	    	  order9pricee = 0;
+	      } else {
+	    	  order9pricee = Integer.parseInt(order6price);
+	     
+	      }
+	      
+	      
+	      
+	      int orderallprice = order1pricee + order2pricee + order3pricee
+	              + order4pricee + order5pricee + order6pricee + order7pricee 
+	              + order8pricee + order9pricee;
+
+	      
+	      model.addAttribute("orderallprice", orderallprice);
 	      
 	      
 		
