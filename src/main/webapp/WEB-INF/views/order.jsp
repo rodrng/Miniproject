@@ -18,6 +18,7 @@
 		<table width="100%"  style="text-align: center; border: 1px solid red; ">
 		<tr>
 			<td>
+			
 		        <img src="<c:url value="/resources/img/c1.jpg" />">
 		        <h3>아이스 카페 아메리카노 : 5000원 <input type="hidden" name="5000" id="price1" value="5000">
 		        <h5>수량선택 :  <input type="hidden" name="americano" id="name1" value="아이스 카페 아메리카노">
@@ -30,6 +31,7 @@
 					<input type="button" value="주문" onclick="printName1()"><br>
 				</h5>
 				</h3>
+				
 			</td>
 			<td>
 		        <img src="<c:url value="/resources/img/c2.jpg" />">
@@ -63,9 +65,9 @@
 			
 		<tr>	
 			<td>
-		        <img src="<c:url value="/resources/img/c1.jpg" />">
-		        <h3>4 : 5000원 <input type="hidden" name="5000" id="price4" value="5000">
-		        <h5>수량선택 :  <input type="hidden" name="americano" id="name4" value="4">
+		        <img src="<c:url value="/resources/img/c4.jpg" />">
+		        <h3>바닐라 크림 콜드 브루 : 5000원 <input type="hidden" name="5000" id="price4" value="5000">
+		        <h5>수량선택 :  <input type="hidden" name="americano" id="name4" value="바닐라 크림 콜드 브루">
 				      <select name="ameri_num" id="quantity4">
 				         <option>1</option>
 				         <option>2</option>
@@ -77,9 +79,9 @@
 				</h3>
 			</td>
 			<td>
-		        <img src="<c:url value="/resources/img/c2.jpg" />">
-		        <h3>5 : 3000원 <input type="hidden" name="3000" id="price5" value="3000">
-		        <h5>수량선택 :  <input type="hidden" name="americano" id="name5" value="5">
+		        <img src="<c:url value="/resources/img/c5.jpg" />">
+		        <h3>시그니처 더 블랙 콜드 브루 : 3000원 <input type="hidden" name="3000" id="price5" value="3000">
+		        <h5>수량선택 :  <input type="hidden" name="americano" id="name5" value="시그니처 더 블랙 콜드 브루">
 				      <select name="ameri_num" id="quantity5">
 				         <option>1</option>
 				         <option>2</option>
@@ -91,9 +93,9 @@
 				</h3>
 			</td>
 			<td>
-		        <img src="<c:url value="/resources/img/c3.jpg" />">
-		        <h3>6 : 4000원 <input type="hidden" name="4000" id="price6" value="4000">
-		        <h5>수량선택 :  <input type="hidden" name="americano" id="name6" value="6">
+		        <img src="<c:url value="/resources/img/c6.jpg" />">
+		        <h3>제주 비자림 콜드 브루 : 4000원 <input type="hidden" name="4000" id="price6" value="4000">
+		        <h5>수량선택 :  <input type="hidden" name="americano" id="name6" value="제주 비자림 콜드 브루">
 				      <select name="ameri_num" id="quantity6">
 				         <option>1</option>
 				         <option>2</option>
@@ -107,9 +109,9 @@
 		</tr>
 		<tr>
 			<td>
-		        <img src="<c:url value="/resources/img/c1.jpg" />">
-		        <h3>7 : 5000원 <input type="hidden" name="5000" id="price7" value="5000">
-		        <h5>수량선택 :  <input type="hidden" name="americano" id="name7" value="7">
+		        <img src="<c:url value="/resources/img/c7.jpg" />">
+		        <h3>콜드 브루 : 5000원 <input type="hidden" name="5000" id="price7" value="5000">
+		        <h5>수량선택 :  <input type="hidden" name="americano" id="name7" value="콜드 브루">
 				      <select name="ameri_num" id="quantity7">
 				         <option>1</option>
 				         <option>2</option>
@@ -121,9 +123,9 @@
 				</h3>
 			</td>
 			<td>
-		        <img src="<c:url value="/resources/img/c2.jpg" />">
-		        <h3>8 : 3000원 <input type="hidden" name="3000" id="price8" value="3000">
-		        <h5>수량선택 :  <input type="hidden" name="americano" id="name8" value="8">
+		        <img src="<c:url value="/resources/img/c8.jpg" />">
+		        <h3>콜드 브루 오트 라떼 : 3000원 <input type="hidden" name="3000" id="price8" value="3000">
+		        <h5>수량선택 :  <input type="hidden" name="americano" id="name8" value="콜드 브루 오트 라떼">
 				      <select name="ameri_num" id="quantity8">
 				         <option>1</option>
 				         <option>2</option>
@@ -135,9 +137,9 @@
 				</h3>
 			</td>
 			<td>
-		        <img src="<c:url value="/resources/img/c3.jpg" />">
-		        <h3>9 : 4000원 <input type="hidden" name="4000" id="price9" value="4000">
-		        <h5>수량선택 :  <input type="hidden" name="americano" id="name9" value="9">
+		        <img src="<c:url value="/resources/img/c9.jpg" />">
+		        <h3>에스프레소 콘 파나 : 4000원 <input type="hidden" name="4000" id="price9" value="4000">
+		        <h5>수량선택 :  <input type="hidden" name="americano" id="name9" value="에스프레소 콘 파나">
 				      <select name="ameri_num" id="quantity9">
 				         <option>1</option>
 				         <option>2</option>

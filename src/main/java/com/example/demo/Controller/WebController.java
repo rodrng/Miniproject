@@ -1,6 +1,7 @@
 package com.example.demo.Controller;
 
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example.demo.dao.IDao;
 import com.example.demo.dto.MemberDto;
+import com.example.demo.dto.MenuDto;
 
 @Controller
 public class WebController {
@@ -25,6 +27,52 @@ public class WebController {
 	@Autowired
 	private SqlSession sqlSession;	
 
+	@RequestMapping(value = "/test")
+	public String test() {		
+		
+		return "test";
+	}
+	
+	@RequestMapping(value = "/testpayment")
+	public String testpayment(HttpServletRequest request) {
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+//		HttpSession session = request.getSession();
+//
+//		String order1 = request.getParameter("order1");
+//		String order1num = request.getParameter("order1num");
+//		String order1price = request.getParameter("order1price");
+//		String order2 = request.getParameter("order2");
+//		String order2num = request.getParameter("order2num");
+//		String order2price = request.getParameter("order2price");
+//		String order3 = request.getParameter("order3");
+//		String order3num = request.getParameter("order3num");
+//		String order3price = request.getParameter("order3price");
+//		String order4 = request.getParameter("order4");
+//		String order4num = request.getParameter("order4num");
+//		String order4price = request.getParameter("order4price");
+//		String order5 = request.getParameter("order5");
+//		String order5num = request.getParameter("order5num");
+//		String order5price = request.getParameter("order5price");
+//		String order6 = request.getParameter("order6");
+//		String order6num = request.getParameter("order6num");
+//		String order6price = request.getParameter("order6price");
+//		String order7 = request.getParameter("order7");
+//		String order7num = request.getParameter("order7num");
+//		String order7price = request.getParameter("order7price");
+//		String order8 = request.getParameter("order8");
+//		String order8num = request.getParameter("order8num");
+//		String order8price = request.getParameter("order8price");
+//		String order9 = request.getParameter("order9");
+//		String order9num = request.getParameter("order9num");
+//		String order9price = request.getParameter("order9price");
+
+		dao.testpaymentDao(request.getParameter("americano"),request.getParameter("ameri_num"),request.getParameter("A5000"));
+		
+		return "redirect:order";
+		
+	}
+	
 	
 	@RequestMapping(value = "/")
 	public String home() {		
@@ -57,12 +105,85 @@ public class WebController {
 	}
 	
 	@RequestMapping(value = "/payment")
-	public String payment(HttpServletRequest request) {
+	public String payment(HttpServletRequest request, Model model) {
 		
+		 MenuDto orderDto = null;
+	     ArrayList<MenuDto> orderDtos = null;
+
+	     
 		IDao dao = sqlSession.getMapper(IDao.class);
-		dao.paymentDao(request.getParameter("qmenu"), request.getParameter("qamount"), request.getParameter("qprice"), request.getParameter("qnum"));
-		return "redirect:index";
+		HttpSession session = request.getSession();
+
+		String order1 = request.getParameter("order1");
+		String order1num = request.getParameter("order1num");
+		String order1price = request.getParameter("order1price");
+		String order2 = request.getParameter("order2");
+		String order2num = request.getParameter("order2num");
+		String order2price = request.getParameter("order2price");
+		String order3 = request.getParameter("order3");
+		String order3num = request.getParameter("order3num");
+		String order3price = request.getParameter("order3price");
+		String order4 = request.getParameter("order4");
+		String order4num = request.getParameter("order4num");
+		String order4price = request.getParameter("order4price");
+		String order5 = request.getParameter("order5");
+		String order5num = request.getParameter("order5num");
+		String order5price = request.getParameter("order5price");
+		String order6 = request.getParameter("order6");
+		String order6num = request.getParameter("order6num");
+		String order6price = request.getParameter("order6price");
+		String order7 = request.getParameter("order7");
+		String order7num = request.getParameter("order7num");
+		String order7price = request.getParameter("order7price");
+		String order8 = request.getParameter("order8");
+		String order8num = request.getParameter("order8num");
+		String order8price = request.getParameter("order8price");
+		String order9 = request.getParameter("order9");
+		String order9num = request.getParameter("order9num");
+		String order9price = request.getParameter("order9price");
 		
+//		if(order1num.equals(" "))
+//			order1num = "0";
+//		else
+//			return order1num;
+//		
+		
+		dao.paymentDao(order1, order1num, order1price, order2, order2num, order2price, order3, order3num, order3price, order4, order4num, order4price, order5, order5num, order5price, 
+				order6, order6num, order6price, order7, order7num, order7price, order8, order8num, order8price, order9, order9num, order9price );
+		
+		
+		 MenuDto dto = dao.pviewdao().get(0);     
+////		 session.setAttribute("test", dto.);
+//		    
+	      model.addAttribute("orderdto",dto);
+	      model.addAttribute("order1ok", dto.getOrder1num());
+	      model.addAttribute("order2ok", dto.getOrder2num());
+	      model.addAttribute("order3ok", dto.getOrder3num());
+	      model.addAttribute("order4ok", dto.getOrder4num());
+	      model.addAttribute("order5ok", dto.getOrder5num());
+	      model.addAttribute("order6ok", dto.getOrder6num());
+	      model.addAttribute("order7ok", dto.getOrder7num());
+	      model.addAttribute("order8ok", dto.getOrder8num());
+	      model.addAttribute("order9ok", dto.getOrder9num());
+//	      
+//	      
+	      System.out.print(dto.getOrder1num());
+	      
+//	      model.addAttribute("orderallprice", orderallprice);
+//	      session.setAttribute("ordernumberss", dto.getHnum());
+	      
+	      
+		
+		
+		return "payment";
+		
+	}
+	
+	@RequestMapping(value = "/pview")
+	public String pview(HttpServletRequest request, Model model) {
+		
+		
+		return "pview";
 	}
 	
 	@RequestMapping(value = "/question")
@@ -213,7 +334,6 @@ public class WebController {
 		
 		IDao dao = sqlSession.getMapper(IDao.class);
 		dao.modifyDao(request.getParameter("qname"), request.getParameter("qcontent"), request.getParameter("qemail"), request.getParameter("qnum"));		
-		
 		return "redirect:list";
 	}
 	

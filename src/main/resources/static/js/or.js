@@ -2,6 +2,8 @@
  * 
  */
  
+ 
+ 
 function printName1() {
 	  name = document.getElementById('name1').value;      
 	  document.getElementById('result1').value = name;      

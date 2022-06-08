@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.example.demo.dto.BoardDto;
 import com.example.demo.dto.MemberDto;
+import com.example.demo.dto.MenuDto;
 
 public interface IDao {
 
@@ -22,7 +23,14 @@ public interface IDao {
 	public void memberInfoModifyOkDao(String mpw, String mname, String memail, String mid); // 회원정보 수정
 	
 	// qmenu
-	public void paymentDao(String qmenu, String qamount, String qprice, String qnum);
+	public void paymentDao(String order1, String order1num, String order1price, String order2, String order2num, String order2price, String order3, String order3num, String order3price, 
+			String order4, String order4num, String order4price, String order5, String order5num, String order5price, String order6, String order6num, String order6price, 
+			String order7, String order7num, String order7price, String order8, String order8num, String order8price, String order9, String order9num, String order9price);
+	public ArrayList<MenuDto> pviewdao();
 	
 	
+//	public void  testpaymentDao(String order1, String order1num, String order1price);
+	
+	public void  testpaymentDao(String americano, String ameri_num, String A5000);
+	public void orderDao(String qname, int qprice, int qamount);
 }

@@ -50,7 +50,23 @@
 	
 	<!-- menu SQL -->	
 	<insert id="paymentDao" >
-		INSERT INTO q_menu (qmenu, qamount, qprice, qnum) VALUES (q_menu_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4})
+		INSERT INTO q_menu (qnum, order1, order1num, order1price, order2, order2num, order2price, order3, order3num, order3price, order4, order4num, order4price, order5, order5num, order5price, 
+							order6, order6num, order6price, order7, order7num, order7price, order8, order8num, order8price, order9, order9num, order9price)
+			 VALUES (q_menu_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, #{param7}, #{param8}, #{param9}, #{param10}, #{param11}, #{param12}, #{param13}, #{param14}, #{param15}, 
+					 #{param16}, #{param17}, #{param18}, #{param19}, #{param20}, #{param21}, #{param22}, #{param23}, #{param24}, #{param25}, #{param26}, #{param27})
+	</insert>
+	 <select id="pviewdao" resultType="com.example.demo.dto.MenuDto">
+		SELECT * FROM q_menu ORDER BY qnum DESC
+	</select>
+	
+	
+	<insert id="orderDao">
+		insert into q_order (String qname, int qprice, int qamount) values (#{param1}, #{param2}, #{param3})
 	</insert>
 
+	<insert id="testpaymentDao" >
+		INSERT INTO test (americano, ameri_num, A5000) VALUES (#{param1}, #{param2}, #{param3})
+	</insert>
+	
+	
 </mapper>
